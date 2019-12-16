@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luxi Wang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+    <div id="title">Luxi Wang</div><br>
+        <div id="links">
+            <a href="#resume">my resume</a>
+            <a href="#skills">about me</a>
+            <a href="#work" style="margin:0px 60px;">works</a>
+            <a href='#gallery'> gallery</a>
+            <a href="#contact">contact</a>
+        </div>
+    </div>
+
+    <center>
+    <div id="middle">
+        <div id="tagline" class="animated zoomIn" style="animation-delay:1.8s;">
+            Hello, this is Luxi. Nice to meet you. <br>
+            <button class="btn_one"> 
+                <div id="temp">
+                <a href="#resume" style="margin:0px 60px;">Find out more about me</a>
+            </div>
+            </button>
+        </div>
+    </div>
+    </center>
+
+   
+    
+
+
+
+    <div id="portfolio">
+        <div id='resume'>
+        <h1>My Resume</h1><br>
+            <div>
+                <p> I am actively looking for SDE internships for summer 2020. I currently live in
+                    Seattle, but I am open to relocation. I primarily code with Python. My most recent
+                    machine learning based projects are written in Python. I have also done many class
+                    projects with Java, and some in C/C++. I am happy to work using these languages, while
+                    I am open to chances to learn new languages. <br>
+                </p>
+            <div>
+
+
+
+
+        <center>
+            <iframe src='luxisresume.pdf' height="600" width="1000" >
+            </iframe>
+        </center>
+
+
+
+         </div>
+             <div id="skills">
+                 <h1>About me</h1>   
+                 <div>
+                        <p>
+                            I am a third year Computer Science and Mathematics student at University of Washington. 
+                            I work at Odegaard Library as a technology consultant. I help people with various computer
+                            issues such as bootcamp, 3D printing and general computer diagnosis. <br>
+
+                            Alongside all the coding and technology stuff,  
+                            I  play in the Univeristy of Washington Symphony Orchestra
+                             and Campus Phiharmonic Orchestra. <br>
+                            I love Dvořák.
+
+                        </p>
+                 </div> 
+             </div>
+         
+              <div id="work">
+                 <h1>My projects</h1>
+
+                 <div class="project">
+                 <h2>SeGuard</h2>
+                 <div> SeGuard is a project that classifies Android applications. My role in this project is
+                     to take the semantic graphs from my supervisor, and parse(featurize) it into vectors. 
+                     These vectors contains information (topological features) of the graph that we think is
+                     crucial for the classicication. Then, we feed it to the downstream random forest classifier.
+                     Up to now, we have about 70% of accuracy for binary classification (Answer the question: is
+                     it a benign or malicious application).
+                 </div>
+                 <button class="btn_one" onclick= "window.location.href ='https://github.com/LuxiWang99/seguard-resources';">visit project</button>
+                </div>
+
+                <div class="project">
+                 <h2>Classical Music Genre Classification</h2>
+                 <div>
+                        Our team is working on a classical music 
+                        genre classifier. The classifier should be able to distinguish music from different time periods.
+                        e.g. romantic or baroque. Our approach is to use 3-second spectrogram as a feature, and process it
+                        using LSTM layer. We hope our neural network is able to connect the "dots" across timestamp and
+                        decide which style this particular 3 second belongs to.   
+                 </div>
+                 <button class="btn_one" onclick= "window.location.href ='https://github.com/LuxiWang99/490_Deep_Learning';">visit project</button>
+                 <!-- <button class="btn_one"  >visit project</button> -->
+                 <!-- <button class="btn_two">code</button> -->
+                </div>
+
+             </div>
+
+             <div id="gallery">
+                    <h1>Gallery</h1>
+
+             <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="me1.jpg" style="width:100%">
+                      <div class="text">Me in Campus Philharmonic Orchestra</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="me2.jpg" style="width:100%">
+                      <div class="text">Me in Microsoft</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="me3.jpg" style="width:50%"  class="center">
+                      <div class="text">Me in Odegaard Library</div>
+                    </div>
+                  
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            </div>
+         
+              <div id="contact">
+                 <h1>contact</h1> 
+                 <!-- <form>
+                     <input type="text" placeholder="name" required>
+                     <input type="email" placeholder="email" required><br>
+                     <textarea placeholder="your message" required rows="5"></textarea><br>
+                     <button class="btn_one">send</button>
+                 </form>  -->
+                 <div id="details">
+                    <!-- <a class="btn_social"><i class="fas fa-phone"></i></a>  -->
+                    <a class="btn_social"><i class="fas fa-at"></i></a> louis99 at uw.edu
+                    <!-- <a class="btn_social"><i class="fab fa-twitter"></i></a>
+                    <a class="btn_social"><i class="fab fa-dribbble"></i></a> -->
+                 </div>   
+             </div>
+    </div>
+    <div id="footer">
+        Luxi Wang <br><br> <a href="https://imfunniee.github.io"></a>
+    </div>
+<script src="index.js" type="text/javascript"></script>
+</body>
+</html>
